@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>beginPath()的使用</title>
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+    var canvas=document.querySelector('canvas');
+    canvas.width=350;
+    canvas.height=300;
+    canvas.style.border='1px solid purple';
+    var context=canvas.getContext('2d');
+
+    context.moveTo(100,50);
+    context.lineTo(100,150);
+    context.lineTo(80,130);
+    context.lineWidth=8;
+    context.strokeStyle='red';
+    context.lineJoin='round';
+    context.stroke();
+
+    context.beginPath();
+    context.moveTo(75,100);
+    context.lineTo(50,120);
+    context.lineWidth=8;
+    context.strokeStyle='blue';
+    context.stroke();
+
+    context.beginPath();
+    context.moveTo(125,100);
+    context.lineTo(150,120);
+    context.lineWidth=8;
+    context.strokeStyle='green';
+    context.stroke();
+
+    context.beginPath();
+    context.moveTo(200,50);
+    context.lineTo(290,50);
+    context.lineWidth=8;
+    context.strokeStyle='orange';
+    context.stroke();
+
+    context.beginPath();
+    context.moveTo(200,100);
+    context.lineTo(290,100);
+    context.lineWidth=8;
+    context.strokeStyle='hotpink';
+    context.stroke();
+
+    context.beginPath();
+    context.moveTo(220,50);
+    context.lineTo(220,150);
+    context.lineWidth=8;
+    context.strokeStyle='skyblue';
+    context.stroke();
+
+    context.beginPath();
+    context.moveTo(270,50);
+    context.lineTo(270,150);
+    context.lineWidth=8;
+    context.strokeStyle='purple';
+    context.stroke();
+
+  
+    
+    </script>
+</body>
+</html>

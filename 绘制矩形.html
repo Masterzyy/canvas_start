@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>绘制 矩形</title>
+</head>
+<body>
+  <img src="./image/feilinghuanraoyuanze.png" alt="">
+  <canvas>
+    您的浏览器版本不支持canvas,请升级!!
+  </canvas>
+
+  <script>
+    var canvas = document.querySelector('canvas');
+        canvas.width = 600;
+        canvas.height = 300;
+        canvas.style.border = '1px solid #ff0000';
+    var context = canvas.getContext('2d');
+
+//    context.rect(100,100,200,100);
+
+    // context.stroke();
+    // context.fill();
+   
+    context.fillStyle='red';
+    context.strokeRect(150,150,300,100);
+  
+
+    
+
+
+    context.fillStyle='green';
+    context.fillRect(200,175,200,50);
+
+    context.clearRect(220,185,160,30)
+  
+  </script>
+</body>
+</html>
